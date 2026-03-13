@@ -30,12 +30,13 @@ if __name__ == '__main__':
          else:
             print('🌺', end='')
       print('')
-
-print('diagonal')
+   print('diagonal')
 for i in range(11):
-      for j in range(11):
-         if j % 4 == 0:
-            print('🌸', end='')
-         else:
-            print('🌺', end='')
-      print('')
+        for j in range(11):
+            if j % 2 == 0 and i % 2 == 0:
+                print('🌸', end='')
+            elif j % 2 == 1 and i % 2 == 1:
+                print('🌺', end='')
+            else:
+                print('🌸', end='')
+        print('')
